@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Providers map contexts in a document to possible completions. The actual completions are defined in the various CodeSense libraries, categorized using their key. A CodeSense Provider tells Espresso what CodeSense libraries are active in the current context. One of these XML files can contain many <provider> elements.
+
+-->
+<codesense>
+	
+	<provider>
+		<selector>text.html.ee2, ee2.tag.open, ee2.tag.self-closing</selector>
+		<completions>com.expressionengine2.variables.global</completions>
+		<completions>com.expressionengine2.tags.pairs</completions>
+		<completions>com.expressionengine2.tags.modules</completions>
+		
+		<!-- Temporary. I'm manually selecting the completions -->
+		<completions>com.expressionengine2.variables.exp:channel:category_heading</completions>
+		<completions>com.expressionengine2.variables.exp:channel:category_archive</completions>
+		<completions>com.expressionengine2.variables.exp:channel:categories</completions>
+		<completions>com.expressionengine2.variables.exp:channel:calendar</completions>
+		<completions>com.expressionengine2.variables.exp:channel:month_links</completions>
+		<completions>com.expressionengine2.variables.exp:channel:info</completions>
+		<completions>com.expressionengine2.variables.paginate</completions>
+		<completions>com.expressionengine2.variables.exp:comment:form</completions>
+		<completions>com.expressionengine2.variables.exp:comment:entries.special</completions>
+		<completions>com.expressionengine2.variables.exp:comment:entries</completions>
+		<completions>com.expressionengine2.variables.exp:channel:entries</completions>
+		<completions>com.expressionengine2.variables.exp:channel:entries.special</completions>
+		<completions>com.expressionengine2.variables.global.special</completions>
+		<completions>com.expressionengine2.variables.global</completions>
+		<completions>com.expressionengine2.tags.modules</completions>
+		
+		<completions>com.expressionengine2.tags.addons</completions>
+		<completions>com.expressionengine2.variables.addons</completions>
+		<completions>com.expressionengine2.pairs.addons</completions>
+		
+		<completions>com.expressionengine2.pairs</completions>
+				
+		<complete-match capture="2">(\{)([a-zA-Z0-9-:_]*)</complete-match>
+	</provider>
+	
+	<!-- Attributes -->
+	<provider>
+		<selector>ee2.tag:has-child(entity:capture(name)),ee2.tag:has-child(entity:capture(name)) > ee2.end</selector>
+		<completions>com.expressionengine2.tags.${name}.attributes</completions>
+		<complete-match capture="2">(\s)([a-zA-Z0-9]*)</complete-match>
+	</provider>
+	
+	 <!-- Attribute Values -->
+	 <provider>
+		<!-- it doesnt seem to be putting the captured attribute name into the completion string -->
+	    <selector>ee2.attribute:has-child(attribute-name:capture(val))</selector>
+	    <completions>com.expressionengine2.tags.attributes.${val}</completions>
+	    <complete-match capture="2">(\s)([a-zA-Z0-9-\'\"]*)</complete-match>
+	  </provider>
+	
+	<!-- Context Specific Variables -->
+	<!-- <provider>
+		<selector>ee2.tag:has-child(open:has-child(name:capture(name))), ee2.tag:has-child(open:has-child(name:capture(name))) > ee2.tag.self-closing</selector>
+		<completions>com.expressionengine2.variables.${name}</completions>
+		<completions>com.expressionengine2.pairs.${name}</completions>
+		<complete-match capture="2">(\{)([a-zA-Z0-9]*)</complete-match>
+	</provider> -->
+	
+</codesense>

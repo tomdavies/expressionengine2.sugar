@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<codesense version="1.0">
+	
+		<!-- Tags -->
+	
+		<set name="com.expressionengine2.tags.addons">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1::$1}$2{/${completion}}$3)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="exp:imgsizer:size" />
+			<completion string="exp:ee_typography" />
+			<completion string="exp:html_strip" />
+			<completion string="exp:freeform:form" />
+			<completion string="exp:char_limit" />
+			<completion string="lg_social_bookmarks" />
+			<completion string="exp:lg_better_meta_pi:template">
+				<behavior>
+					<append-dynamic>
+						<matched-suffix>(\s*:)|[^:]</matched-suffix>
+						<transform-into>(?1::$1}$2)</transform-into>
+					</append-dynamic>
+				</behavior>
+			</completion>
+		</set>
+		
+		<!-- Attributes -->
+		
+		<set name="com.expressionengine2.tags.lg_social_bookmarks.attributes">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>\s?|[^=]</matched-suffix>
+					<transform-into>(?1::="$1"$2)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="title" />
+			<completion string="permalink" />
+			<completion string="sites" />
+		</set>
+		
+		<set name="com.expressionengine2.tags.exp:lg_better_meta_pi:template.attributes">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>\s?|[^=]</matched-suffix>
+					<transform-into>(?1::="$1"$2)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="entry_id" />
+			<completion string="url_title" />
+			<completion string="title" />
+			<completion string="title_prefix" />
+			<completion string="title_suffix" />
+			<completion string="hide_site_title" />
+			<completion string="description" />
+			<completion string="keywords" />
+			<completion string="author" />
+			<completion string="publisher" />
+			<completion string="rights" />
+			<completion string="date_created" />
+			<completion string="date_modified" />
+			<completion string="date_valid" />
+			<completion string="identifier" />
+			<completion string="robots_index" />
+			<completion string="robots_follow" />
+			<completion string="robots_archive" />
+		</set>
+		
+		<set name="com.expressionengine2.tags.exp:char_limit.attributes">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>\s?|[^=]</matched-suffix>
+					<transform-into>(?1::="$1"$2)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="total" />
+		</set>
+
+		<set name="com.expressionengine2.tags.exp:imgsizer:size.attributes">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>\s?|[^=]</matched-suffix>
+					<transform-into>(?1::="$1"$2)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="src" />
+			<completion string="alt" />
+			<completion string="width" />
+			<completion string="height" />
+			<completion string="quality" />
+			<completion string="mask" />
+			<completion string="mask_radius" />
+			<completion string="mask_threshold" />
+			<completion string="justcheck" />
+			<completion string="justurl" />
+			<completion string="title" />
+			<completion string="id" />
+			<completion string="class" />
+			<completion string="cache" />
+		</set>
+			
+		<set name="com.expressionengine2.tags.exp:freeform:form.attributes">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>\s?|[^=]</matched-suffix>
+					<transform-into>(?1::="$1"$2)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="form_name" />
+			<completion string="required" />
+			<completion string="notify" />
+			<completion string="template" />
+			<completion string="user_email_template" />
+			<completion string="send_user_email" />
+			<completion string="form_id" />
+			<completion string="form_class" />
+			<completion string="return" />
+		</set>
+		
+		<set name="com.expressionengine2.tags.exp:ee_typography.attributes">
+			
+			<completion string="formatting">
+				<behavior>
+					<append-dynamic>
+						<matched-suffix>\s?|[^=]</matched-suffix>
+						<transform-into>(?1::="${1:XHTML/br/none/lite}"$2)</transform-into>
+					</append-dynamic>
+				</behavior>
+			</completion>
+			
+			<completion string="allowed_html">
+				<behavior>
+					<append-dynamic>
+						<matched-suffix>\s?|[^=]</matched-suffix>
+						<transform-into>(?1::="${1:safe/none/all}"$2)</transform-into>
+					</append-dynamic>
+				</behavior>
+			</completion>
+			
+			<completion string="auto_link">
+				<behavior>
+					<append-dynamic>
+						<matched-suffix>\s?|[^=]</matched-suffix>
+						<transform-into>(?1::="${1:y/n}"$2)</transform-into>
+					</append-dynamic>
+				</behavior>
+			</completion>
+			
+			<completion string="allow_image_urls">
+				<behavior>
+					<append-dynamic>
+						<matched-suffix>\s?|[^=]</matched-suffix>
+						<transform-into>(?1::="${1:y/n}"$2)</transform-into>
+					</append-dynamic>
+				</behavior>
+			</completion>
+			
+		</set>
+		
+		<!-- Attribute Values -->
+		
+		<set name="com.expressionengine2.tags.attributes.formatting">
+			<completion string="xhtml"/>
+			<completion string="br"/>
+			<completion string="none"/>
+			<completion string="lite"/>
+		</set>
+		
+		<set name="com.expressionengine2.tags.attributes.allowed_html">
+			<completion string="safe"/>
+			<completion string="none"/>
+			<completion string="all"/>
+		</set>
+		
+		<set name="com.expressionengine2.tags.attributes.auto_link">
+			<completion string="y"/>
+			<completion string="n"/>
+		</set>
+		
+		<set name="com.expressionengine2.tags.attributes.allow_image_urls">
+			<completion string="y"/>
+			<completion string="n"/>
+		</set>
+		
+		<!-- Variables -->
+		<set name="com.expressionengine2.variables.addons">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1::}$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="social_site_name" />
+			<completion string="social_site_url" />
+			<completion string="social_site_img_url" />
+			<completion string="social_site_count" />
+		</set>
+		
+		<!-- Pairs -->
+		<set name="com.expressionengine2.pairs.addons">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1::}$1{/${completion}}$2)</transform-into>
+				</append-dynamic>
+			</behavior>
+			<completion string="social_sites" />
+		</set>
+
+</codesense>

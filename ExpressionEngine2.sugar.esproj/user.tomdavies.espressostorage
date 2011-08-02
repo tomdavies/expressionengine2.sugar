@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ESProjectShowHiddenFilesKey</key>
+	<false/>
+	<key>ESProjectWindowState</key>
+	<dict>
+		<key>ContentSize</key>
+		<string>{958, 1101}</string>
+		<key>ProjectURL</key>
+		<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/ExpressionEngine2.sugar.esproj/</string>
+		<key>StateType</key>
+		<string>ProjectWindow</string>
+		<key>TopLeftPoint</key>
+		<string>{4, 1178}</string>
+	</dict>
+	<key>com.macrabbit.Espresso.FileManager.DisclosureCollapsed</key>
+	<false/>
+	<key>com.macrabbit.Espresso.FileManager.FileControllerState</key>
+	<dict>
+		<key>ExpandedURLs</key>
+		<array>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/CodeSenseLibraries</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/CodeSenseProviders</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/PlaceHolderThemes</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/Syntaxes</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextTools</string>
+		</array>
+	</dict>
+	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
+	<false/>
+	<key>com.macrabbit.Espresso.WorkspaceTabs.DisclosureCollapsed</key>
+	<false/>
+</dict>
+</plist>
