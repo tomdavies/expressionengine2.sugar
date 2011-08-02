@@ -23,14 +23,59 @@
 		<array>
 			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/CodeSenseLibraries</string>
 			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/CodeSenseProviders</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/Contents</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/Itemizers</string>
 			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/PlaceHolderThemes</string>
 			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/Syntaxes</string>
+			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TEA</string>
 			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions</string>
 			<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextTools</string>
 		</array>
 	</dict>
 	<key>com.macrabbit.Espresso.Publisher.DisclosureCollapsed</key>
 	<false/>
+	<key>com.macrabbit.Espresso.Workspace.Tabs</key>
+	<dict>
+		<key>Tabs</key>
+		<array>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions/Extended.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions/Categories.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions/Actions.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions/Sorting.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions/Snippets.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/users/tomdavies/Library/Application%20Support/Espresso/Sugars/expressionengine2.sugar/TextActions/Snippets-Long.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+		</array>
+	</dict>
 	<key>com.macrabbit.Espresso.WorkspaceTabs.DisclosureCollapsed</key>
 	<false/>
 </dict>
