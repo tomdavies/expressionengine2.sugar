@@ -31,6 +31,20 @@
 			<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 		</snippet>
 		
+		<snippet id="com.macrabbit.TextActions.EE2.redirect" category="actions.text.EE2/tools.Snippets.single">
+			<title>Redirect</title>
+			<text><![CDATA[{redirect="${1:template_group}/${2:template}"}$3]]></text>
+			<text-trigger>redirect</text-trigger>
+			<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
+		</snippet>
+		
+		<snippet id="com.macrabbit.TextActions.EE2.stylesheet" category="actions.text.EE2/tools.Snippets.single">
+			<title>Stylesheet</title>
+			<text><![CDATA[{stylesheet="${1:template_group}/${2:template}"}$3]]></text>
+			<text-trigger>stylesheet</text-trigger>
+			<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
+		</snippet>
+		
 		<snippet id="com.macrabbit.TextActions.EE2.segment" category="actions.text.EE2/tools.Snippets.single">
 			<title>Segment</title>
 			<text><![CDATA[{segment_${1:1}}]]></text>
@@ -234,6 +248,20 @@
 			<syntax-context>ee2, ee2 *</syntax-context>
 		</snippet>
 		
+		<snippet id="com.macrabbit.TextActions.EE2.conditional.ifor" category="actions.text.EE2/tools.Snippets.conditionals">
+			<title>if OR</title>
+			<text><![CDATA[{if ${2:variable}=="${3:value}" OR ${4:variable}=="${5:value}" }$6{/if}]]></text>
+			<text-trigger>ifor</text-trigger>
+			<syntax-context>ee2, ee2 *</syntax-context>
+		</snippet>
+		
+		<snippet id="com.macrabbit.TextActions.EE2.conditional.ifand" category="actions.text.EE2/tools.Snippets.conditionals">
+			<title>if AND</title>
+			<text><![CDATA[{if ${2:variable}=="${3:value}" AND ${4:variable}=="${5:value}" }$6{/if}]]></text>
+			<text-trigger>ifand</text-trigger>
+			<syntax-context>ee2, ee2 *</syntax-context>
+		</snippet>
+		
 		<snippet id="com.macrabbit.TextActions.EE2.conditional.else" category="actions.text.EE2/tools.Snippets.conditionals">
 			<title>if:else</title>
 			<text><![CDATA[{if ${2:variable}=="${3:value}"}$4{if:else}$5{/if}]]></text>
@@ -245,6 +273,20 @@
 			<title>if:elseif</title>
 			<text><![CDATA[{if ${2:variable}=="${3:value}"}$4{if:elseif ${5:variable}=="${6:value}"}$7{/if}]]></text>
 			<text-trigger>ifelseif</text-trigger>
+			<syntax-context>ee2, ee2 *</syntax-context>
+		</snippet>
+		
+		<snippet id="com.macrabbit.TextActions.EE2.conditional.ifnor" category="actions.text.EE2/tools.Snippets.conditionals">
+			<title>if no results</title>
+			<text><![CDATA[{if no_results}$6{/if}]]></text>
+			<text-trigger>ifnor</text-trigger>
+			<syntax-context>ee2, ee2 *</syntax-context>
+		</snippet>
+		
+		<snippet id="com.macrabbit.TextActions.EE2.conditional.ifseg" category="actions.text.EE2/tools.Snippets.conditionals">
+			<title>if segment_x == "value"</title>
+			<text><![CDATA[{if segment_${1:x}=="${2:value}"}$3{/if}]]></text>
+			<text-trigger>ifseg</text-trigger>
 			<syntax-context>ee2, ee2 *</syntax-context>
 		</snippet>
 		
