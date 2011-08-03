@@ -5,7 +5,7 @@
 		
 		<snippet id="com.macrabbit.TextActions.EE2.embed" category="actions.text.EE2/tools.Snippets.single">
 			<title>Embed</title>
-			<text><![CDATA[{embed="$1" ${2:my_channel}="${3:plants}"}]]></text>
+			<text><![CDATA[{embed="${1:${2:template_group}/${3:template}}" ${4:${5:param}="${6:value}"}}]]></text>
 			<text-trigger>embed</text-trigger>
 			<syntax-context>ee2, ee2 *</syntax-context>
 		</snippet>
