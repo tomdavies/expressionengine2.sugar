@@ -38,12 +38,6 @@
 			<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 		</snippet>
 		
-		<snippet id="com.macrabbit.TextActions.EE2.stylesheet" category="actions.text.EE2/tools.Snippets.single">
-			<title>Stylesheet</title>
-			<text><![CDATA[{stylesheet="${1:template_group}/${2:template}"}$3]]></text>
-			<text-trigger>stylesheet</text-trigger>
-			<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
-		</snippet>
 		
 		<snippet id="com.macrabbit.TextActions.EE2.segment" category="actions.text.EE2/tools.Snippets.single">
 			<title>Segment</title>
@@ -235,9 +229,10 @@
 		<snippet id="com.macrabbit.TextActions.EE2.stylesheet" category="actions.text.EE2/tools.Snippets.misc">
 			<title>Stylesheet</title>
 			<text><![CDATA[<link rel="stylesheet" type="text/css" media="${1:screen}" href="{stylesheet=${2:channel}/${3:channel_css}}">]]></text>
-			<text-trigger>style</text-trigger>
+			<text-trigger>stylesheet</text-trigger>
 			<syntax-context>ee2, ee2 *</syntax-context>
 		</snippet>
+
 		
 		<!-- Conditionals -->
 		
