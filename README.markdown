@@ -1,6 +1,6 @@
 # expressionengine2 Espresso Sugar
 
-**This sugar has been converted from [Anthony Short's](https://github.com/anthonyshort/) [ee1 sugar](https://github.com/anthonyshort/expressionengine.sugar) - the vast, vast majority of the work is his. All this version does is update the sugar to work with ee2 and make it play nice with the ee1 sugar, and add a few extra snippets. It almost certainly contains the odd bug - if you find one please do open an issue or pull request...**
+**This sugar has been converted from [Anthony Short's](https://github.com/anthonyshort/) [ee1 sugar](https://github.com/anthonyshort/expressionengine.sugar) - the majority of the work is his, (though I *think* he in turn converted it from the [EE TextMate bundle](http://www.chrisruzin.net/entry/textmate_expressionengine_bundle/) ). All this version does is update that sugar to work with ee2 and rename things so that it plays nice with the ee1 sugar, and add a few extra snippets. It almost certainly contains the odd bug - if you find one please do open an issue or pull request...**
 
 This sugar gives you access to the ee2 template syntax within [Espresso](http://macrabbit.com/espresso/), giving you codesense, itemizers and more. 
 
@@ -22,7 +22,7 @@ This sugar gives you access to the ee2 template syntax within [Espresso](http://
 	
 ## Theme
 
-Themed to match (Anthony Short's quiet night them)[http://github.com/anthonyshort/quiet-night.foam/tree/master]
+Themed to match [Anthony Short's quiet night them](http://github.com/anthonyshort/quiet-night.foam/tree/master)
 	
 ## Known Bugs
 
@@ -34,6 +34,7 @@ Themed to match (Anthony Short's quiet night them)[http://github.com/anthonyshor
 
 - Check Espresso 2 alpha compatibility 
 - Housecleaning updates of codesense and snippets
+- Integrate some of the interesting stuff from [https://github.com/wesbaker/ExpressionEngine2.tmbundle]
 
 ### From ee1 sugar
 
