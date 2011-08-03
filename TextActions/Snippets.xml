@@ -17,10 +17,10 @@
 			<syntax-context>ee2, ee2 *</syntax-context>
 		</snippet>
 		
-		<snippet id="com.macrabbit.TextActions.EE2.variable" category="actions.text.EE2/tools.Snippets.single">
-			<title>Assign Variable</title>
-			<text><![CDATA[{assign_variable:${1:variable_name}="${2:value}"}$3]]></text>
-			<text-trigger>var</text-trigger>
+		<snippet id="com.macrabbit.TextActions.EE2.preload_replace" category="actions.text.EE2/tools.Snippets.single">
+			<title>Assign Preload Replacements</title>
+			<text><![CDATA[{preload_replace:${1:variable_name}="${2:value}"}$3]]></text>
+			<text-trigger>pre</text-trigger>
 			<syntax-context>ee2, ee2 *, html</syntax-context>
 		</snippet>
 		
