@@ -4,7 +4,9 @@
 
 This sugar gives you access to the ee2 template syntax within [Espresso](http://macrabbit.com/espresso/), giving you codesense, itemizers and more. 
 
-**NB:** This has been tested with Espresso 1.1.2 - compatibility with [Espresso 2](http://macrabbit.com/espresso/2/) is planned but not currently tested. Caveat user.
+## Espresso 2 Kaboom/alpha compatibility 
+
+Initial testing with [Espresso 2 Kaboom (alpha 4)](http://macrabbit.com/espresso/2/) suggests that everything essentially works except for the TEA powered *documentation for tag* functionality. I plan to re-write this once the new JavaScript-based system for user actions has some documentation available.
 
 ## Download and Install
 
@@ -22,7 +24,7 @@ This sugar gives you access to the ee2 template syntax within [Espresso](http://
 	
 ## Theme
 
-Themed to match [Anthony Short's quiet night them](http://github.com/anthonyshort/quiet-night.foam/tree/master)
+Themed to match [Anthony Short's quiet night theme](http://github.com/anthonyshort/quiet-night.foam/tree/master). Edit `PlaceHolderThemes/ExpressionEngine2.css` if for some reason you like to code on a blinding white background.
 	
 ## Known Bugs
 
@@ -31,10 +33,8 @@ Themed to match [Anthony Short's quiet night them](http://github.com/anthonyshor
 ## To Dos
 
 ### New
-
-- Check Espresso 2 alpha compatibility 
 - Housecleaning updates of codesense and snippets
-- Integrate some of the interesting stuff from [https://github.com/wesbaker/ExpressionEngine2.tmbundle]
+- Integrate some of the interesting stuff from https://github.com/wesbaker/ExpressionEngine2.tmbundle
 
 ### From ee1 sugar
 
