@@ -1,8 +1,7 @@
 # expressionengine2 Espresso Sugar
 
-**NB:** This has been tested with Espresso 1.1.2 - for compatibility with [Espresso 2](http://macrabbit.com/espresso/2/) use the Kaboom Branch - once Espresso 2 is formally released the sugar i'll update the sugar such that version will become the default. Until then install via git and then checkout the kaboom branch (see below).
 
-**NB:** This branch is built for compatibility with [Espresso 2](http://macrabbit.com/espresso/2/) - for Espresso 1.x you should use the master branch.
+**NB:** This branch is built for compatibility with [Espresso 2](http://macrabbit.com/espresso/2/) - for Espresso 1.x you should use the [master branch](https://github.com/tomdavies/expressionengine2.sugar).
 
 After install you will need to checkout the kaboom branch in your local repository in order for the sugar to behave as expected in Espresso 2.
 
