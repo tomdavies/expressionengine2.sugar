@@ -2,6 +2,9 @@
 
 **NB:** This has been tested with Espresso 1.1.2 - for compatibility with [Espresso 2](http://macrabbit.com/espresso/2/) use the Kaboom Branch - once Espresso 2 is formally released the sugar i'll update the sugar such that version will become the default. Until then install via git and then checkout the kaboom branch (see below).
 
+**NB:** This branch is built for compatibility with [Espresso 2](http://macrabbit.com/espresso/2/) - for Espresso 1.x you should use the master branch.
+
+After install you will need to checkout the kaboom branch in your local repository in order for the sugar to behave as expected in Espresso 2.
 
 **This sugar has been converted from [Anthony Short's](https://github.com/anthonyshort/) [ee1 sugar](https://github.com/anthonyshort/expressionengine.sugar) - the majority of the work is his, (though I *think* he in turn converted it from the [EE TextMate bundle](http://www.chrisruzin.net/entry/textmate_expressionengine_bundle/) ). All this version does is update that sugar to work with ee2 and rename things so that it plays nice with the ee1 sugar, and add a few extra snippets. It almost certainly contains the odd bug - if you find one please do open an issue or pull request...**
 
