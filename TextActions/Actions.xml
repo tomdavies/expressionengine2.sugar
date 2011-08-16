@@ -29,7 +29,7 @@
             <alternate>line</alternate>
             <output>text</output>
             <undo_name>Documentation for tag</undo_name>
-            <syntax-context>text.html.ee2, text.html.ee2 * </syntax-context>
+            <syntax-context>language-root.html.with-ee2, language-root.html.with-ee2 * </syntax-context>
         </setup>
     </action>
 

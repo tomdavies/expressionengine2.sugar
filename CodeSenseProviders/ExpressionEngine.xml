@@ -7,7 +7,7 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 <codesense>
 	
 	<provider>
-		<selector>text.html.ee2, ee2.tag.open, ee2.tag.self-closing</selector>
+		<selector>language-root.html.with-ee2, ee2.tag.open, ee2.tag.self-closing</selector>
 		<completions>com.expressionengine2.variables.global</completions>
 		<completions>com.expressionengine2.tags.pairs</completions>
 		<completions>com.expressionengine2.tags.modules</completions>

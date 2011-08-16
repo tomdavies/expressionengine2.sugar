@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="language-root.html.with-ee2">
+	<zones>
+		<include syntax="php" />
+		<include syntax="ee2" />
+		<include syntax="language-root.html" />
+	</zones>
+</syntax>
