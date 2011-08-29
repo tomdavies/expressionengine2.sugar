@@ -41,6 +41,10 @@
 		<title>Channel</title>		
 	</category>
 	
+	<category id="tools.Snippets.safecracker" show="sub">
+		<title>Safecracker</title>		
+	</category>
+	
 	<category id="tools.Snippets.comment" show="sub">
 		<title>Comments</title>		
 	</category>
