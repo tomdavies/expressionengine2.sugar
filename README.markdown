@@ -40,8 +40,6 @@ Themed to match [Anthony Short's quiet night theme](http://github.com/anthonysho
 
 ### New
 
-- Check Espresso 2 alpha compatibility 
-- Housecleaning updates of codesense and snippets
 - Integrate some of the interesting stuff from [https://github.com/wesbaker/ExpressionEngine2.tmbundle]
 
 ### From ee1 sugar
