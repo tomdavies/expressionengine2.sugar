@@ -117,7 +117,7 @@ $6
 		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
-	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.short" category="actions.text.EE2/tools.Snippets.safecracker">
+	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.short" category="actions.text.EE2/tools.Snippets.addons">
 		<title>exp:safecracker (short)</title>
 		<text><![CDATA[{exp:safecracker channel="${1:channel_name}" return="${2:return/path}" ${3:entry_id="${4:segment_3}"}}
 		$5<input name="title" type="text" /> 
@@ -128,7 +128,7 @@ $6
 		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
-	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.long" category="actions.text.EE2/tools.Snippets.safecracker">
+	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.long" category="actions.text.EE2/tools.Snippets.addons">
 		<title>exp:safecracker (long)</title>
 		<text><![CDATA[{exp:safecracker channel="${1:channel_name}" return="${2:return/path}" ${3:entry_id="${4:segment_3}"}}
 		  $5<label for="title">Title</label>
@@ -185,6 +185,25 @@ $6
 		
 		{/exp:safecracker}]]></text>
 		<text-trigger>safe_long</text-trigger>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
+	</snippet>
+	
+	<snippet id="com.anthonyshort.TextActions.EE2.switchee" category="actions.text.EE2/tools.Snippets.addons">
+		<title>exp:switchee</title>
+		<text><![CDATA[{exp:switchee variable="${1:variable_to_test}" parse="inward"}	    
+  {case value="${2:value}"}
+  
+  {/case}
+  
+  {case value="${3:value2}"}
+  
+  {/case}
+  
+  {case value="${4:value3}" ${5:default="Yes"}}
+  
+  {/case}
+{/exp:switchee}]]></text>
+		<text-trigger>switchee</text-trigger>
 		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	

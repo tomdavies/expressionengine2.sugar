@@ -11,7 +11,7 @@
 		<selector>tools.Snippets.conditionals</selector>
 		<selector>tools.Snippets.misc</selector>
 		<selector>tools.Snippets.channel</selector>
-  	<selector>tools.Snippets.safecracker</selector>
+  	<selector>tools.Snippets.addons</selector>
 		<selector>tools.Snippets.comment</selector>
 		<selector>tools.Snippets.email</selector>
 		<selector>tools.Snippets.member</selector>
