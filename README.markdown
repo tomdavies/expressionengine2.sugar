@@ -27,7 +27,7 @@ additional steps if you're using the Espresso 2 public beta:
 	
 ## Theme
 
-Themed to match [Anthony Short's quiet night theme](http://github.com/anthonyshort/quiet-night.foam/tree/master)
+Themed to match [Hannien's solarized theme](https://github.com/hanninen/solarized-colors-espresso)
 	
 ## Known Bugs
 
