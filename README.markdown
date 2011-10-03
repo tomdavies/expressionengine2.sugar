@@ -26,7 +26,9 @@ If there is a plugin or extension you'd like to see supported, let me know.
 	
 ## Theme
 
-Themed to match [Anthony Short's quiet night theme](http://github.com/anthonyshort/quiet-night.foam/tree/master)
+Built in theme matches [Anthony Short's quiet night theme](http://github.com/anthonyshort/quiet-night.foam/tree/master)
+
+Alternatively use [this fork](https://github.com/Etsur/expressionengine2.sugar/) to match the popular [Solarized theme](https://github.com/hanninen/solarized-colors-espresso).
 
 ## Recent Additions
 
