@@ -13,21 +13,21 @@
 $6
 {/exp:channel:entries}]]></text>
 		<text-trigger>entries</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.entries.paginate" category="actions.text.EE2/tools.Snippets.channel">
 		<title>Pagination Links</title>
 		<text><![CDATA[{paginate}<div>Page {current_page} of {total_pages} pages {pagination_links}</div>{/paginate}]]></text>
 		<text-trigger>page</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.entries.categories" category="actions.text.EE2/tools.Snippets.channel">
 		<title>Categories</title>
 		<text><![CDATA[{categories$1}{category_name}{/categories}]]></text>
 		<text-trigger>cats</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.entries.related" category="actions.text.EE2/tools.Snippets.channel">
@@ -39,7 +39,7 @@ $6
 		$3
 		{/related_entries}]]></text>
 		<text-trigger>rel</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.entries.revrelated" category="actions.text.EE2/tools.Snippets.channel">
@@ -51,7 +51,7 @@ $6
 		$4
 		{/reverse_related_entries}]]></text>
 		<text-trigger>rev</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.next" category="actions.text.EE2/tools.Snippets.channel">
@@ -60,7 +60,7 @@ $6
 		${2:<p>Next entry: <a href="{path="${3:channel}/${4:comments}"}">{title}</a></p>}
 		{/exp:channel:next_entry}]]></text>
 		<text-trigger>next</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.prev" category="actions.text.EE2/tools.Snippets.channel">
@@ -69,14 +69,14 @@ $6
 		${2:<p>Previous entry: <a href="{path="${3:channel}/${4:comments}"}">{title}</a></p>}
 		{/exp:channel:prev_entry}]]></text>
 		<text-trigger>prev</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.categories" category="actions.text.EE2/tools.Snippets.channel">
 		<title>exp:channel:categories</title>
 		<text><![CDATA[{exp:channel:categories channel="${1:channel1}" disable="category_fields" $2}{/exp:channel:categories}]]></text>
 		<text-trigger>cat</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.category_archive" category="actions.text.EE2/tools.Snippets.channel">
@@ -94,7 +94,7 @@ $6
 
 		{/exp:channel:category_archive}]]></text>
 		<text-trigger>catarch</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.category_heading" category="actions.text.EE2/tools.Snippets.channel">
@@ -107,17 +107,17 @@ $6
 		{/if}
 		{/exp:channel:category_heading}]]></text>
 		<text-trigger>cathead</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.month_links" category="actions.text.EE2/tools.Snippets.channel">
 		<title>exp:channel:month_links</title>
 		<text><![CDATA[{exp:channel:month_links channel="${1:channel1}"$2}{/exp:channel:month_links}]]></text>
 		<text-trigger>month_links</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
-	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.short" category="actions.text.EE2/tools.Snippets.safecracker">
+	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.short" category="actions.text.EE2/tools.Snippets.addons">
 		<title>exp:safecracker (short)</title>
 		<text><![CDATA[{exp:safecracker channel="${1:channel_name}" return="${2:return/path}" ${3:entry_id="${4:segment_3}"}}
 		$5<input name="title" type="text" /> 
@@ -125,10 +125,10 @@ $6
 		<input type="submit" value="Submit" />
 	{/exp:safecracker}]]></text>
 		<text-trigger>safe</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
-	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.long" category="actions.text.EE2/tools.Snippets.safecracker">
+	<snippet id="com.anthonyshort.TextActions.EE2.safecracker.long" category="actions.text.EE2/tools.Snippets.addons">
 		<title>exp:safecracker (long)</title>
 		<text><![CDATA[{exp:safecracker channel="${1:channel_name}" return="${2:return/path}" ${3:entry_id="${4:segment_3}"}}
 		  $5<label for="title">Title</label>
@@ -185,7 +185,26 @@ $6
 		
 		{/exp:safecracker}]]></text>
 		<text-trigger>safe_long</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
+	</snippet>
+	
+	<snippet id="com.anthonyshort.TextActions.EE2.switchee" category="actions.text.EE2/tools.Snippets.addons">
+		<title>exp:switchee</title>
+		<text><![CDATA[{exp:switchee variable="${1:variable_to_test}" parse="inward"}	    
+  {case value="${2:value}"}
+  
+  {/case}
+  
+  {case value="${3:value2}"}
+  
+  {/case}
+  
+  {case value="${4:value3}" ${5:default="Yes"}}
+  
+  {/case}
+{/exp:switchee}]]></text>
+		<text-trigger>switchee</text-trigger>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.entry_form" category="actions.text.EE2/tools.Snippets.channel">
@@ -194,7 +213,7 @@ $6
 
 		{/exp:channel:entry_form}]]></text>
 		<text-trigger>entry_form</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.info" category="actions.text.EE2/tools.Snippets.channel">
@@ -203,7 +222,7 @@ $6
 
 		{/exp:channel:info}]]></text>
 		<text-trigger>info</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.date_heading" category="actions.text.EE2/tools.Snippets.channel">
@@ -212,7 +231,7 @@ $6
 		<h1>{entry_date format="%Y %m %d"}</h1>
 		{/date_heading}]]></text>
 		<text-trigger>datehead</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.channel.date_footer" category="actions.text.EE2/tools.Snippets.channel">
@@ -221,7 +240,7 @@ $6
 		<h1>{entry_date format="%Y %m %d"}</h1>
 		{/date_footer}]]></text>
 		<text-trigger>datefoot</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.comment.entries" category="actions.text.EE2/tools.Snippets.comment">
@@ -230,14 +249,14 @@ $6
 
 		{/exp:comment:entries}]]></text>
 		<text-trigger>commententries</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.comment.preview" category="actions.text.EE2/tools.Snippets.comment">
 		<title>exp:comment:preview</title>
 		<text><![CDATA[{exp:comment:preview}{/exp:comment:preview}]]></text>
 		<text-trigger>commentpreview</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.comment.form" category="actions.text.EE2/tools.Snippets.comment">
@@ -246,7 +265,7 @@ $6
 
 		{/exp:comment:form}]]></text>
 		<text-trigger>commentform</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.comment.captcha" category="actions.text.EE2/tools.Snippets.comment">
@@ -257,7 +276,7 @@ $6
 		<input type="text" name="captcha" value="{captcha_word}" maxlength="20" /></p>
 		{/if}]]></text>
 		<text-trigger>captcha</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.email.contact_form" category="actions.text.EE2/tools.Snippets.email">
@@ -266,7 +285,7 @@ $6
 
 		{/exp:email:contact_form}]]></text>
 		<text-trigger>contact</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.email.friend" category="actions.text.EE2/tools.Snippets.email">
@@ -275,21 +294,21 @@ $6
 
 		{/exp:email:tell_a_friend}]]></text>
 		<text-trigger>friend</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.member.custom_data" category="actions.text.EE2/tools.Snippets.member">
 		<title>Custom Profile Data</title>
 		<text><![CDATA[{exp:member:custom_profile_data}$1{/exp:member:custom_profile_data}]]></text>
 		<text-trigger>membercustom</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.member.ignore_list" category="actions.text.EE2/tools.Snippets.member">
 		<title>Ignore List</title>
 		<text><![CDATA[{exp:member:ignore_list}$1{/exp:member:ignore_list}]]></text>
 		<text-trigger>memberignore</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.member.login" category="actions.text.EE2/tools.Snippets.member">
@@ -314,7 +333,7 @@ $6
 
 		{/exp:member:login_form}]]></text>
 		<text-trigger>memberlogin</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.emoticons" category="actions.text.EE2/tools.Snippets.misc">
@@ -327,7 +346,7 @@ $6
 			{/exp:emoticon}
 		</table>]]></text>
 		<text-trigger>emoticons</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.iptonation.worldflags" category="actions.text.EE2/tools.Snippets.misc">
@@ -336,14 +355,14 @@ $6
 		{ip_address}
 		{/exp:ip_to_nation:world_flags}]]></text>
 		<text-trigger>flags</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.anthonyshort.TextActions.EE2.mailinglist" category="actions.text.EE2/tools.Snippets.misc">
 		<title>Mailing List</title>
 		<text><![CDATA[{exp:mailinglist:form list="${1:default}"}$2{/exp:mailinglist:form}]]></text>
 		<text-trigger>mail</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.macrabbit.TextActions.EE2.query" category="actions.text.EE2/tools.Snippets.misc">
@@ -374,14 +393,14 @@ $6
 		</table>
 		]]></text>
 		<text-trigger>referrer</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>	
 	
 	<snippet id="com.macrabbit.TextActions.EE2.stats" category="actions.text.EE2/tools.Snippets.misc">
 		<title>Stats</title>
 		<text><![CDATA[{exp:stats channel="${1:channel1}"}{/exp:stats}]]></text>
 		<text-trigger>stats</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.macrabbit.TextActions.EE2.trackbacks" category="actions.text.EE2/tools.Snippets.misc">
@@ -392,7 +411,7 @@ $6
 		<div class="">Tracked on: <a href="{trackback_url}">{channel_name}</a> ({trackback_ip}) at {trackback_date format="%Y %m %d %H:%i:%s"}</div>
 		{/exp:trackback:entries}]]></text>
 		<text-trigger>trackbacks</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 	<snippet id="com.macrabbit.TextActions.EE2.pings" category="actions.text.EE2/tools.Snippets.misc">
@@ -401,7 +420,7 @@ $6
 		<p><a href="{ping_site_url}">{ping_site_name}</a></p>
 		{/exp:updated_sites:pings}]]></text>
 		<text-trigger>pings</text-trigger>
-		<syntax-context>ee2, ee2 *</syntax-context>
+		<syntax-context>ee2.html, html, html *, ee2.tag, ee2.tag *</syntax-context>
 	</snippet>
 	
 </action-recipes>

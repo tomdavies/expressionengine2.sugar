@@ -19,19 +19,7 @@
 	</action>-->
 	
 		
-	<action id="com.anthonyshort.TextActions.EETagDocumentation" category="actions.text.EE2/actions.tag">
-        <class>TEALoader</class>
-        <title>Documentation for tag</title>
-        <key-equivalent>control cmd e</key-equivalent>
-        <setup>
-            <script>tag_documentation.rb</script>
-            <input>selection</input>
-            <alternate>line</alternate>
-            <output>text</output>
-            <undo_name>Documentation for tag</undo_name>
-            <syntax-context>text.html.ee2, text.html.ee2 * </syntax-context>
-        </setup>
-    </action>
+
 
 	<!-- TEA Actions -->
 

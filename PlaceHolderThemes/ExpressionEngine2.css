@@ -9,23 +9,23 @@
 	background-color: #000;
 }
 
-ee2 ee2.tag > name, 
-ee2 ee2.tag > punctuation,
-ee2 ee2.tag > string,
-ee2 ee2.tag.conditional { color:#8ce999; }
+.with-ee2 ee2.tag > name, 
+.with-ee2 ee2.tag > punctuation,
+.with-ee2 ee2.tag > string,
+.with-ee2 ee2.tag.conditional { color:#8ce999; }
 
-ee2 ee2.tag attribute-name  {
+.with-ee2 ee2.tag attribute-name  {
 	color:#9ecffd;
 	font-weight:bold; 
 }
-ee2 ee2.tag attribute { 
+.with-ee2 ee2.tag attribute { 
 	color:#d144ca;
 }
 
-ee2 ee2.tag.self-closing.conditional { background:rgba(37,59,118,0.35);}
+.with-ee2 ee2.tag.self-closing.conditional { background:rgba(37,59,118,0.35);}
 
-ee2 ee2.tag.self-closing,
-ee2 ee2.tag.self-closing > name, 
-ee2 ee2.tag.self-closing > punctuation, 
-ee2 ee2.tag.self-closing attribute-name { color:#9ecffd;}
+.with-ee2 ee2.tag.self-closing,
+.with-ee2 ee2.tag.self-closing > name, 
+.with-ee2 ee2.tag.self-closing > punctuation, 
+.with-ee2 ee2.tag.self-closing attribute-name { color:#9ecffd;}
 

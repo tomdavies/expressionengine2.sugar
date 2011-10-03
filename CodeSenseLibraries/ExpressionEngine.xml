@@ -28,7 +28,6 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="exp:channel:prev_entry"/>
 		<completion string="exp:channel:month_links"/>
 		<completion string="exp:channel:calendar"/>
-		<completion string="exp:channel:categories"/>
 		<completion string="exp:channel:category_archive"/>
 	</set>
 	

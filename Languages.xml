@@ -3,8 +3,8 @@
 <!--
 	
 	expressionengine2 Sugar
-	Modified by Tom Davies from the ee1 original by Anthony Short (http://anthonyshort.com.au)
-	Version 0.1a
+	Modified by Tom Davies (http://tomdavies.net) from the ee1 original by Anthony Short (http://anthonyshort.com.au)
+	Version 0.3a
 	Latest Releases @ https://github.com/tomdavies/expressionengine2.sugar
 	
 -->
@@ -14,14 +14,14 @@
 	<language id="com.expressionengine2">
 		
 		<!-- Should really be syntax-name -->
-		<root-zone>text.html.ee2</root-zone>
+		<root-zone>language-root.html.with-ee2</root-zone>
 		<name>ExpressionEngine 2</name>
 		<detectors>
 			<match-content>{exp</match-content>
 			<match-content>{embed</match-content>
 			<match-content>{if</match-content>
 		</detectors>
-		
+		<default-extension>html</default-extension>
 	</language>
 	
 </settings>

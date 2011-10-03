@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<syntax name="text.html.ee2">
+<syntax name="ee2">
 	
     <zones>
 		<include collection="everything"/>
@@ -28,7 +28,7 @@
 	    </zone>
 
 			<!-- HTML/CSS/JS -->
-			<include syntax="text.html.basic"/>
+			<include syntax="language-root.html.basic"/>
 			
 			<!-- XML -->
 			<include syntax="text.xml"/>
