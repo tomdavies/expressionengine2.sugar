@@ -17,11 +17,16 @@
 		<root-zone>language-root.html.with-ee2</root-zone>
 		<name>ExpressionEngine 2</name>
 		<detectors>
-			<match-content>{exp</match-content>
-			<match-content>{embed</match-content>
-			<match-content>{if</match-content>
+			<match-content lines="20"><![CDATA[(?i){exp]]></match-content>
+			<match-content lines="20"><![CDATA[(?i){embed]]></match-content>
+			<match-content lines="20"><![CDATA[(?i){preload_replace]]></match-content>
+			<match-content lines="20"><![CDATA[(?i){!--]]></match-content>
 		</detectors>
-		<default-extension>html</default-extension>
+		<extension>html</extension>
 	</language>
 	
 </settings>
+
+
+
+
