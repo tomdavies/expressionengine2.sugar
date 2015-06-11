@@ -1,7 +1,7 @@
 # expressionengine2 Espresso Sugar
 
 
-**NB:** This sugar is built for compatibility with [Espresso 2](http://macrabbit.com/espresso/2/) - for Espresso 1.x you should use the 1.1.2-legacy tag.
+**NB:** This sugar is built for compatibility with [Espresso 2](http://macrabbit.com/espresso/) - for Espresso 1.x you should use the 1.1.2-legacy tag.
 
 **This sugar has been converted from [Anthony Short's](https://github.com/anthonyshort/) [ee1 sugar](https://github.com/anthonyshort/expressionengine.sugar) - the majority of the work is his, (though I *think* he in turn converted it from the [EE TextMate bundle](http://www.chrisruzin.net/entry/textmate_expressionengine_bundle/) ). All this version does is update that sugar to work with ee2 and rename things so that it plays nice with the ee1 sugar, and add a few extra snippets. It almost certainly contains the odd bug - if you find one please do open an issue or pull request...**
 
