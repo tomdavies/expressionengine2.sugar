@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itemizer>
 	
-	<recipe name="built-in.comment">
-		<class>ESCommentItem</class>
-		<selector>ee2.comment</selector>
-	</recipe>
-
-	<recipe name="ee2.tag.collection">
-		<start-selector>ee2.tag.open:has-child(name:capture(name))</start-selector>
-		<end-selector>ee2.tag.close:has-child(name[text == $name.text])</end-selector>
+	<recipe name="ee2.conditional">
+		<class>ESJSControlBlockItem</class>
+		<start-zone>ee2.open.conditional:capture(name)</start-zone>
+		<end-zone>ee2.close.conditional</end-zone>
+		<end-before-zone>ee2.open.conditional.else</end-before-zone>
 		<subrecipes>
 			<include-root-recipes/>
 		</subrecipes>
-		<class>ESXHTMLItem</class>
 	</recipe>
 	
-	<recipe name="ee2.tag.conditional.collection">
-		<start-selector>ee2.tag.open.conditional:has-child(name:capture(name))</start-selector>
-		<end-selector>ee2.tag.close.conditional:has-child(name[text == $name.text])</end-selector>
+	<recipe name="ee2">
+		<start-zone>ee2.open:not(conditional):capture(name):has-child(name:capture(tagname))</start-zone>
+		<end-zone>ee2.close:has-child(name[text == $tagname.text])</end-zone>
 		<subrecipes>
 			<include-root-recipes/>
 		</subrecipes>
-		<class>ESXHTMLItem</class>
 	</recipe>
 	
 	
-	<recipe name="ee2.self-closing-tag">
-		<selector>ee2.tag.open:has-child(name:capture(name), empty-element-marker), ee2.tag.self-closing:has-child(name:capture(name)), ee2.tag.open:has-child(name:capture(name), self-closing)</selector>
-		<class>ESXHTMLItem</class>
+	<recipe name="ee2.standalone">
+		<selector>ee2.standalone:capture(name)</selector>
 	</recipe>
 
 </itemizer>

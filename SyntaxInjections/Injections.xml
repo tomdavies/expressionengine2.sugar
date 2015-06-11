@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <injections>
+	<!--Inject into HTML tags and attributes-->
+	<injection name="com.expressionengine2.ee2.tags" selector="html.with-ee2 tag.open" action="insert-after-children">
+		<include syntax="ee2" />
+	</injection>
+	<injection name="com.expressionengine2.ee2.tag-attributes" selector="html.with-ee2 attribute-value.string" action="replace-children">
+		<include syntax="ee2" />
+	</injection>
+	<injection name="com.expressionengine2.ee2.close-tags" selector="html.with-ee2 tag.close" action="replace-children">
+		<include syntax="ee2" />
+	</injection>
 	
 </injections>
