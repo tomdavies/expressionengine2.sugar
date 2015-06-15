@@ -61,7 +61,7 @@
 			<!-- For standalone tags which don't fit into the standard format -->
 			<zone name="ee2.standalone.special">
 				<starts-with>
-					<expression>(\{)(exp\:lg\_better\_meta\_pi\:template)</expression>
+					<expression>(\{)(exp:lg_better_meta_pi:template)</expression>
 					<capture number="1" name="ee2.punctuation.definition.begin"/>
 					<capture number="2" name="ee2.entity.name"/>
 				</starts-with>
@@ -92,12 +92,12 @@
 			
 			<zone name="ee2.open">
 			   <starts-with>
-				<expression>(\{)(exp:[a-zA-Z0-9:_]+|categories|date\_heading|date\_footer|entry_titles|categories|paginate)</expression>
+				<expression>(\{)(exp:[a-zA-Z0-9:_]+|categories|date_heading|date_footer|entry_titles|categories|paginate)</expression>
 					<capture number="1" name="ee2.punctuation.definition.begin"/>
 					<capture number="2" name="ee2.entity.name"/>
 				</starts-with>
 				<ends-with>
-					<expression>/?(})</expression>
+					<expression>(})</expression>
 					<capture number="1" name="ee2.punctuation.definition.end"/>
 				</ends-with>
 				<subzones>
@@ -132,13 +132,13 @@
 		<collection name="ee2-tag-attributes">
 			<zone name="ee2.attribute">
 				<starts-with>
-					<expression>(\w*)\s*(=*)\s*([\"\'])</expression>
+					<expression>([\w:]+)\s*(=+)\s*(["'])</expression>
 					<capture number="1" name="ee2.attribute-name"/>
 					<capture number="2" name="ee2.operator"/>
 					<capture number="3" name="ee2.punctuation.definition.begin"/>
 				</starts-with>
 				<ends-with>
-					<expression>[\"\']</expression>
+					<expression>\3</expression>
 					<capture number="0" name="ee2.punctuation.definition.end"/>
 				</ends-with>
 				<subzones name="ee2.attribute-value">
