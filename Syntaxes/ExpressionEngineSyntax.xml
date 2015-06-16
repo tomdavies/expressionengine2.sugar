@@ -61,7 +61,7 @@
 			<!-- For standalone tags which don't fit into the standard format -->
 			<zone name="ee2.standalone.special">
 				<starts-with>
-					<expression>(\{)(exp:lg_better_meta_pi:template|exp:ce_image:single|exp:moblog:check|exp:ce_cache:stat:ic)</expression>
+					<expression>(\{)(exp:lg_better_meta_pi:template|exp:ce_img:single|exp:moblog:check|exp:ce_cache:stat:ic)</expression>
 					<capture number="1" name="ee2.punctuation.definition.begin"/>
 					<capture number="2" name="ee2.entity.name"/>
 				</starts-with>
