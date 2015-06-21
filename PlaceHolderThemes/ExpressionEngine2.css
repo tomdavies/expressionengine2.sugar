@@ -1,31 +1,25 @@
 /*
 	@theme ExpressionEngine2 Placeholder
-	@placeholder ee22, html
+	@placeholder ee2
 */
 
-
-@base {
-	color: #fff;
-	background-color: #000;
+ee2 {
+	spell-check: disabled;
 }
 
-.with-ee2 ee2.tag > name, 
-.with-ee2 ee2.tag > punctuation,
-.with-ee2 ee2.tag > string,
-.with-ee2 ee2.tag.conditional { color:#8ce999; }
-
-.with-ee2 ee2.tag attribute-name  {
-	color:#9ecffd;
-	font-weight:bold; 
-}
-.with-ee2 ee2.tag attribute { 
-	color:#d144ca;
+ee2.punctuation, ee2.operator {
+	color: #865fdb;
 }
 
-.with-ee2 ee2.tag.self-closing.conditional { background:rgba(37,59,118,0.35);}
+ee2.entity.name  {
+	color: #6700b9;
+	background-color: #f9f4ff;
+}
 
-.with-ee2 ee2.tag.self-closing,
-.with-ee2 ee2.tag.self-closing > name, 
-.with-ee2 ee2.tag.self-closing > punctuation, 
-.with-ee2 ee2.tag.self-closing attribute-name { color:#9ecffd;}
+ee2.attribute-name {
+	color: #4e279a;
+}
 
+ee2.attribute-value {
+	color: #bc670f;
+}

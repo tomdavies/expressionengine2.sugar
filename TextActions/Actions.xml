@@ -1,71 +1,20 @@
 <?xml version="1.0"?>
 <action-recipes>
 	
-	<!-- Hidden -->
-
-	<!-- <snippet id="com.macrabbit.TextActions.EE2NewTag" category="hidden">
-		<title>New Tag</title>
-		<text>{${1:tag}}$0{/$1}</text>
-		<when-disabled>hide</when-disabled>
-	</snippet> -->
-	
-	<!-- Custom Actions -->
-	
-<!--	<action id="com.macrabbit.TextActions.CloseTag.Alias" category="actions.text.EE2/actions.text.general">
-		<title>Close Tag (EE)</title>
-		<text-trigger key-equivalent="/">{</text-trigger>
-		<action-identifier>com.macrabbit.TextActions.CloseTag</action-identifier>
-		<syntaxes>ee2, ee2*</syntaxes>
-	</action>-->
-	
-		
-
-
-	<!-- TEA Actions -->
-
-	<action id="com.onecrayon.TextActions.WrapInSnippet.tag" category="actions.text.EE2/actions.tag">
-		<class>TEAforEspresso</class>
+	<action id="com.expressionengine2.TextActions.WrapInSnippet.tag" category="actions.text.EE2/actions.tag">
+		<script>wrap_with_tag.js</script>
 		<title>Wrap Selection In EE Tag</title>
 		<key-equivalent>control E</key-equivalent>
-		<setup>
-			<action>selections_to_snippets</action>
-			<options>
-				<dict>
-				
-					<key>first_snippet</key>
-					<string>{${1:exp:}}$SELECTED_TEXT{/${1/\s.*//}}$0</string>
-					
-					<key>undo_name</key>
-         			 <string>Wrap Selection In EE Tag</string>
-					
-				</dict>				
-			</options>
-		</setup>
 	</action>
 	
-	<action id="com.onecrayon.TextActions.WrapLinesInSnippet.tag" category="actions.text.EE2/actions.tag">
-		<class>TEAforEspresso</class>
+	<action id="com.expressionengine2.TextActions.WrapLinesInSnippet.tag" category="actions.text.EE2/actions.tag">
+		<script>selected_lines_to_snippets.js</script>
 		<title>Wrap Selected Lines In EE Tag</title>
-		<key-equivalent>cmd control E</key-equivalent>
+		<key-equivalent>command control E</key-equivalent>
 		<setup>
-			<action>selected_lines_to_snippets</action>
-			<options>
-				<dict>
-				
-					<key>first_snippet</key>
-					<string>{${1:tag}}$SELECTED_TEXT{/${1/\s.*//}}</string>
-					
-					<key>following_snippet</key>
-					<string>{$1}$SELECTED_TEXT{/${1/\s.*//}}</string>
-					
-					<key>final_append</key>
-					<string>$0</string>
-					
-					<key>undo_name</key>
-					<string>Wrap Selected Lines In Tag</string>
-
-				</dict>
-			</options>
+			<firstSnippet><![CDATA[{${1:tag}}$SELECTED_TEXT{/${1/\s.*//}}]]></firstSnippet>
+			<followingSnippet><![CDATA[{$1}$SELECTED_TEXT{/${1/\s.*//}}]]></followingSnippet>
+			<finalAppend>$0</finalAppend>
 		</setup>
 	</action>
 

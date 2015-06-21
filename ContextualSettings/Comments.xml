@@ -3,17 +3,17 @@
 <settings>
 
 	<setting name="comment-multiline-start">
-		<syntax-context>language-root.html.with-ee2 *</syntax-context>
+		<language-context>language-root.html.with-ee2</language-context>
 		<value>{!--</value>
 	</setting>
 	
 	<setting name="comment-multiline-end">
-		<syntax-context>language-root.html.with-ee2 *</syntax-context>
+		<language-context>language-root.html.with-ee2</language-context>
 		<value>--}</value>
 	</setting>
 
 	<setting name="comment-singleline-start">
-		<syntax-context>language-root.html.with-ee2 *</syntax-context>
+		<language-context>language-root.html.with-ee2</language-context>
 		<no-value/>
 	</setting>
 	
